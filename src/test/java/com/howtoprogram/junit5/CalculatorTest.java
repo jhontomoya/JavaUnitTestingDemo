@@ -70,8 +70,8 @@ class CalculatorTest {
 		int r=80;
 		calculatorMockito = mock(Calculator.class);
 		when(calculatorMockito.Suma(a, b)).thenReturn(80);	
-		assertEquals(r,calculator.Suma(a,b));
-		System.out.println(calculator.Suma(a,b));
+		assertEquals(r,calculatorMockito.Suma(a,b));
+		System.out.println(calculatorMockito.Suma(a,b));
 	}
 	
 	@Test
@@ -82,9 +82,9 @@ class CalculatorTest {
 		int b=5;
 		int r=30;
 		calculatorMockito = mock(Calculator.class);
-		when(calculatorMockito.Resta(a, b)).thenReturn(80);	
-		assertEquals(r,calculator.Resta(a,b));
-		System.out.println(calculator.Resta(a,b));
+		when(calculatorMockito.Resta(a, b)).thenReturn(30);	
+		assertEquals(r,calculatorMockito.Resta(a,b));
+		System.out.println(calculatorMockito.Resta(a,b));
 	}
 	
 	@Test
@@ -95,9 +95,9 @@ class CalculatorTest {
 		int b=5;
 		int r=100;
 		calculatorMockito = mock(Calculator.class);
-		when(calculatorMockito.Division(a, b)).thenReturn(80);	
-		assertEquals(r,calculator.Division(a,b));
-		System.out.println(calculator.Division(a,b));
+		when(calculatorMockito.Division(a, b)).thenReturn(100);	
+		assertEquals(r,calculatorMockito.Division(a,b));
+		System.out.println(calculatorMockito.Division(a,b));
 	}
 	
 	@Test
@@ -108,9 +108,9 @@ class CalculatorTest {
 		int b=10;
 		int r=200;
 		calculatorMockito = mock(Calculator.class);
-		when(calculatorMockito.Multiplicacion(a, b)).thenReturn(80);	
-		assertEquals(r,calculator.Multiplicacion(a,b));
-		System.out.println(calculator.Multiplicacion(a,b));
+		when(calculatorMockito.Multiplicacion(a, b)).thenReturn(200);	
+		assertEquals(r,calculatorMockito.Multiplicacion(a,b));
+		//System.out.println(calculator.Multiplicacion(a,b));
 	}
 	
 
